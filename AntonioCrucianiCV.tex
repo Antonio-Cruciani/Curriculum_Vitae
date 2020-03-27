@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Antonio} % Your first name
+\familyname{Cruciani} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{Via Salti 78A}{Sant'Angelo in Pontano, Macerata, 62020}
+%\mobile{3293094668 }
+%\email{crc.antonio@gmail.com}
+%\homepage{}{} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+\newcommand{\signature}[3][Antonio Cruciani]{%
+ \vspace{4cm}
+  \parbox{\textwidth}{
+    \centering #3 \today\\
+    \vspace{2cm}
+
+    \parbox{7cm}{
+      \centering
+      \rule{6cm}{1pt}\\
+       #1 
+    }
+    \hfill
+ 
+  }
+}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Contact Information}
+\cventry{}{Email}{}{}{crc.antonio.12@gmail.com}{}
+
+\section{Education}
+\cventry{2017--2020}{Student}{University of Rome }{Tor Vergata}{\textit{Master's degree}}{Computer Science.\\
+	\underline{Final mark} : 110/110 Cum Laude\\
+	\underline{Supervisor}: \textcolor{blue}{\underline{{\href{http://www.mat.uniroma2.it/~pasquale/}{Prof. Francesco Pasquale}}}}\\
+	\underline{Thesis title}:Dynamic Random Graphs and unstructured P2P networks, analysis of two models inspired to the Bitcoin network.\\
+	Available at the following \textcolor{blue}{\underline{{\href{https://github.com/Antonio-Cruciani/dynamic-random-graph-generator}{link}}}}}
+
+
+\cventry{2011--2017}{Student}{University of Rome }{Tor Vergata}{\textit{Bachelor}}{Computer Science.\\ 
+	\underline{Final mark} : 92/110\\
+	\underline{Supervisor}:
+	\textcolor{blue}{\underline{ {\href{https://didattica.uniroma2.it/docenti/curriculum_vitae/4221-Giorgio-Gambosi}{Prof.Giorgio Gambosi.}}}}\\
+	\underline{Thesis title}: Efficient larning methods for playlist prediction.\\
+	\underline{Description}: My bachelor thesis was on Machine Learning, entitled: \lq\lq Efficient learning methods for playlist prediction\rq\rq, in which I analyzed the performance of the \textit{Logistic Markov Embedding} algorithm. It is an algorithm that was initially applied for the automatic playlists creation, which are considered as Markov chains located in a latent space. LME learns how to represent each song as a single point (or multiple) in the latent space. This type of approach can be extended to any kind of sequential data. 
+	In addition to the algorithm analysis, I performed empirical tests comparing the performance of the LME with  the other pre-existing learning algorithms. Finally, I studied and analyzed the distributed version of the model.  The main idea of this distributed algorithm is to divide the global embedding problem into local version, easier to process on multiple agents, in order to scale the complexity, quadratic in the input size, which can be considered the only weakness of this model.\\
+}
+
+
+\cventry{2006--2011}{High School }{ITIS Montani}{Fermo}{\textit{}}{ Qualified Industrial Technician specializzation : Information and Technology}  % Arguments not required can be left empty
+
+
+
+\newpage
+
+
+
+%\section{Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+%\textcolor{blue}{\underline{{http://www.fub.it/index.php/it/Chi\%20siamo/Persone/Amati}{Giambattista Amati}}}
+\section{Experience}
+\subsection{Research}
+\cventry{February \\ Now \\ 2020}{Big Data and Information Retrieval}{\textsc{ Big Data Analytics Lab at Fondazione Ugo Bordoni} }{Working on MinHash Signature Estimation Algorithms for Graph Clustering, Centrality, Ranking and \textit{d-gap} compression }  {}{\underline{Supervisor:}	\textcolor{blue}{\underline{ {\href{http://www.fub.it/index.php/it/Chi\%20siamo/Persone/Amati}{Giambattista Amati}}}}}
+\subsection{University }
+\cventry{June 2019}{Seminar}{\textsc{University of Rome Tor Vergata}}{Talk on FPT Algorithms}{}{ I have held an advanced seminar about  Iterative Compression technique for NP-Hard problems on Graphs.}
+\cventry{October 2018 June 2019}{Teaching Assistant}{\textsc{University of Rome Tor Vergata}}{ \href{http://www.didattica.uniroma2.it/docenti/curriculum/4044-Miriam-Di-Ianni}{Prof. Miriam Di Ianni}}{}{Computability and Computational Complexity Theory\\ {List of Exercises (in Italian) proposed by me available at the following \textcolor{blue}{\underline{ \href{https://drive.google.com/drive/folders/1MjHVaIM3-BX4eUOvz9r02ZL8jzMjfX74?usp=sharing}{link}}}}}
+
+\cventry{December 2017 June 2018}{Teaching Assistant}{\textsc{University of Rome Tor Vergata}}{\href{https://didattica.uniroma2.it/docenti/curriculum/4952-Gianluca-Rossi}{Prof. Gianluca Rossi }}{}{Computer programming with laboratory}
+
+
+\subsection{Work}
+
+
+%------------------------------------------------
+\cventry{October 2015 January 2016}{Developer}{\textsc{WeDot}}{Roma}{}{Software developer for Microsoft platforms, .Net , C\# ,Windows Server. 
+}
+
+\cventry{June 2010  September 2010}{Intern}{\textsc{New System}}{Falerone,Fermo,Marche}{}{Web developer and sysadmin}
+
+
+
+
+%------------------------------------------------
+
+%\subsection{Miscellaneous}
+
+%\cventry{2010--2011}{}{}{}{}{Spent some time finding myself. This was a courageous endeavour that didn't have a job title. It was quite important to my overall development though so I'm adding it to my CV. Also it explains the gap in my otherwise stellar CV.}
+
+%\cventry{2009--2010}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems. Allowed me to become expert in all forms of martial arts and weaponry.}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\cvitem{2019}{Antonio Cruciani, Daniele Pasquini, Giambattista Amati, Paola Vocca}
+\cvitem{}{\textcolor{blue}{\underline{\href{http://ceur-ws.org/Vol-2441/paper23.pdf}{About Graph Index Compression Techniques}}}}
+\section{Certifications}
+
+\cvitem{2017}{[MOOC] Approximation Algorithms by \'Ecole Normale Sup\'erieure }
+\cvitem{}{Massive open online course by ENS on approximation algorithm. Particularly emphasizes algorithms that can be designed using linear programming and semidefinite programming.}
+\cvitem{2017}{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/8ENFUNVFRNSZ}{Machine Learning Specialization by Washington University}}
+\cvitem{}{Online specialization on machine learning covering: foundations of ML, regression, classification, clustering and retrieval. To see the certification click on the name of specialization }
+\cvitem{2017}{\href{https://www.coursera.org/account/accomplishments/certificate/8E6BSNQNMR56}{Machine Learning By Stanford University}}
+\cvitem{}{Online course on machine learning, topics: supervised learning, unsupervised learning. To see the certification click on the name of specialization }
+\cvitem{2017}{\href{https://drive.google.com/file/d/0Bwk56PFyrBW_TWFUOG9ocS1fZ3M/view}{Common European Framework (CEFR) B1}}
+%\sqrt{}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%
+\section{Programming skills}
+
+\cvitem{Basic}{\textsc{owl}, \textsc{sparql},\textsc{fortran},\textsc{cobol},\textsc{lisp}}
+\cvitem{Intermediate}{\textsc{go},\textsc{matlab},\textsc{javascript},\textsc{r},\textsc{asp.net},\textsc{java}}
+\cvitem{Advanced}{\textsc{python},\textsc{c},\textsc{c++},\textsc{c\#},\textsc{sql},\textsc{php}}
+\cvitem{Frameworks}{Apache Spark (Advanced)}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%\newpage
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Italian}{Mother tongue}{}
+\cvitemwithcomment{English}{Certification: Common European Framework (CEFR) B1 }{}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Computational Complexity}{Distributed Computing}
+\cvlistdoubleitem{Network Analysis}{Spectral Graph Theory}
+\cvlistdoubleitem{Stocastic Processes}{Dynamic Graphs}
+\cvlistdoubleitem{Algorithms}{Algorithmic game theory}
+\cvlistdoubleitem{Machine Learning}{Information retrieval}
+\cvlistdoubleitem{Property Testing}{}
+
+\section{List of courses with grades }
+
+\cvitemwithcomment{\textit{}}{%
+        \centering
+        \begin{tabularx}{\textwidth-\hintscolumnwidth-\separatorcolumnwidth}{YYY}
+            \toprule
+            Exam &Professor         & Grade (/30) \\ \midrule
+           Network Analysis &  Miriam Di Ianni & 30  \\ \bottomrule
+           Cooperative Systems and Social Networks & Maurizio Talamo & 30L \\ \bottomrule
+          Statistical Inference and Information Theory & Gianpaolo Scalia Tomba & 30  \\ \bottomrule
+          Distributed Algorithms and Complex Networks & Andrea Clementi, Luciano Gualà, Luca Trevisan & 26  \\ \bottomrule
+           Algorithms and Data Structures 2 & Francesco Pasquale & I  \\ \bottomrule
+          Artificial Intelligence 2 & Maria Teresa Pazienza & 30L \\ \bottomrule
+          Security of Information Systems & Andrea Dimitri & 29  \\ \bottomrule
+           Information Retrieval & Gianbattista Amati & 30L  \\ \bottomrule
+           Probability 2 & Antonella Calzolari & 28 \\ \bottomrule
+           Distributed Cooperative Systems & Franco Arcieri & 29 \\ \bottomrule
+           Web Mining And Retrieval & Roberto Basili & 27 \\ \bottomrule
+            Systems verification methods & Benedetto Intrigila & 30 \\ \bottomrule
+          Machine Learning & Giorgio Gambosi & 30 \\ \bottomrule      
+             Semidefinite Programming and Discrete Optimization  &  Angelika Wiegele & - \\ \bottomrule
+           Average Grade & & 29.26
+        \end{tabularx}%
+}{}
+\signature{}{Antonio Cruciani}
+%\section{Autorizzazione trattamento dati personali}
+%Autorizzo il trattamento dei miei dati personali ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 -Codice in materia di protezione dei dati personali-
+\end{document}
